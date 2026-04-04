@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+
+<library>
+  <book id="1">
+    <title>ASD</title>
+    <author>someone</author>
+    <year>2022</year>
+    <price>4500</price>
+  </book>
+  
+
+  <book id="2">
+    <title> SQL</title>
+    <author>someone2</author>
+    <year>2021</year>
+    <price>2500</price>
+  </book>
+
+    <title>SE</title>
+    <author>someone3</author>
+    <year>2018</year>
+    <price>3200</price>
+  </book>
+
+  <book id="4">
+    <title>daweb</title>
+    <author>someone4</author>
+    <year>2020</year>
+    <price>1800</price>
+  </book>
+  
+  
+  <book id="5">
+    <title>THL</title>
+    <author>someone5</author>
+    <year>2019</year>
+    <price>2000</price>
+  </book>
+  
+  
+  <book id="6">
+    <title>THG</title>
+    <author>someone6</author>
+    <year>2021</year>
+      <price>1900</price>
+  </book>
+</library>
+
