@@ -1,0 +1,25 @@
+﻿
+{
+  "library": {
+    "book": [
+      {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": 1925,
+        "genre": "Fiction",
+        "available": true,
+        "keywords": ["classic", "novel", "1925"]
+      },
+      {
+        "id": 2,
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "year": 2008,
+        "genre": "Technology",
+        "available": false,
+        "keywords": ["programming", "refactoring", "software"]
+      }
+    ]
+  }
+}

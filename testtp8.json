@@ -1,0 +1,36 @@
+{
+  "$schema": "./cv.json",
+  "identity": {
+    "firstName": "someone",
+    "lastName": "someone",
+    "email": "something@something.something",
+    "phone": "1212121",
+    "dateOfBirth": "2005-02-14"
+  },
+  "education": [
+    {
+      "degree": "Licence in Computer Science",
+      "institution": "usto",
+      "year": 2026,
+      "mention": "Good"
+    }
+  ],
+  "experience": [
+    {
+      "jobTitle": "Full-stack Developer Intern",
+      "company": "study-buddy",
+      "startDate": "2025-06-01",
+      "endDate": "2026-04-05",
+      "current": false,
+      "description": "Developping a collaborative knowledge hub using React and Node.js."
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "SQL",
+    "Node.js",
+    "Express.js",
+    "JSON Schema Validation"
+  ]
+}
