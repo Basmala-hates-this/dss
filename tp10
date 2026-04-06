@@ -1,0 +1,47 @@
+tp 10 is also a set og queries,the only difference...aggregated (almost smart)
+moving on,i updated the same db i used for tp 9 to add more elemnts in it....
+if u want to do so as well....here is a set i did:
+
+([
+  { "name": "Logitech MX Master 3", "price": 99, "category": "Peripherals" },
+  { "name": "Dell XPS 15", "price": 2200, "category": "Laptops" },
+  { "name": "Keychron K2", "price": 85, "category": "Peripherals" },
+  { "name": "Webcam", "price": 80, "category": "Accessories" },
+  { "name": "Microphone", "price": 120, "category": "Accessories" },
+  { "name": "anker sound core", "price": 70, "category": "Accessories" }
+])
+
+/////////////////////////////////////////////////////////////////////////////////
+1-avrage price:
+
+db.products.aggregate([
+  {
+    $group: {
+      _id: null,
+      averagePrice: { $avg: "$price" }
+    }
+  }
+])
+
+
+/////////////////////////////////////////////////////////////////////////////
+2-grouped product by category:
+db.products.aggregate([
+  {
+    $group: {
+      _id: "$category",
+      productCount: { $sum: 1 }
+    }
+  }
+])
+
+
+//////////////////////////////////////////////////////////////////////////////
+3-sort product by descending.....forgot what i was saying
+
+db.products.aggregate([
+  { $sort: { price: -1 } }
+])
+
+
+////////////////////////////////////////////////////////////////////////////
