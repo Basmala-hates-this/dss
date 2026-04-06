@@ -1,0 +1,29 @@
+for tp 9 ...just suffuring with getting mongos db(if u need help or installers,send me and i'll give)
+and a set of kinda simple queris?
+i ran them in the mongosh terminal but i think it is possible to do in the cmd
+i'll put them here and u can alt the names and values as u wish:
+/////////////////////////////////////////////////////////////
+1-creation + insertion of 5 elemnts(mongo works as if it didnt find the data base it will create it):
+db.products.insertMany([
+  { "name": "Dell Latitude E7270", "price": 1200, "category": "Laptops" },
+  { "name": "Logitech G Pro", "price": 150, "category": "Peripherals" },
+  { "name": "Samsung 4K Monitor", "price": 450, "category": "Displays" },
+  { "name": "Nvidia RTX 4090", "price": 2100, "category": "Hardware" },
+  { "name": "USB-C Hub", "price": 80, "category": "Accessories" }
+])
+/////////////////////////////////////////////////////////////////////
+2-price >1000:
+db.products.find({ price: { $gt: 1000 } })
+
+////////////////////////////////////////////////////////////////
+3-update one:
+ps:i updated usb-c hub,u are free to update whatever..
+
+db.products.updateOne({ name: "USB-C Hub" }, { $set: { price: 75 } })
+db.products.find({ name: "USB-C Hub" })
+
+//////////////////////////////////////////
+4-display everything in database "in a pretty way~~"
+db.products.find().pretty()
+
+and i assume this is tp 9 entirely 
